@@ -31,7 +31,7 @@ def count_atoms_in_molecule(molecular_formula):
         
         # Step 2: Update the dictionary with the atom name and count
         atoms[atom_name] = atom_count
-
+ 
     # Step 3: Return the completed dictionary
     return atoms
 
