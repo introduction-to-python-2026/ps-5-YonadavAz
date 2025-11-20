@@ -37,7 +37,7 @@ def build_equations(reactant_atoms, product_atoms):
     ## equations ##
     equations = []
     for element in ELEMENTS:
-        lhs = generate_equation_for_element(reactant_atoms, reactant_coefficients, element)
+        lhs = generate_equation_for_element(reactant_atoms, reactant_coefficients, element) 
         rhs = generate_equation_for_element(product_atoms, product_coefficients, element)
         if lhs != 0 or rhs != 0:
             equations.append(Eq(lhs, rhs))
