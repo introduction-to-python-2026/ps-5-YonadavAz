@@ -3,17 +3,17 @@
 
 def split_before_uppercases(formula):
     start = 1
-    text = []
+    text = ""
     for i,x in enumerate(formula):
-        if x is isupper():
-            text.append[formula[start:i]]
+        if x.isupper():
+            text += formula[start:i]
             start = i
-        text.append[formula[start:i]]
+        text += formula[start:i]
     return text
 
 def split_at_digit(formula):
     for i,x in enumerate(formula):
-        if x is isdigit():
+        if x.isdigit():
             return formula[:i], formula[i:] 
     return formula, 1
 

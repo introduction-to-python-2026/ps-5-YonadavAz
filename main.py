@@ -15,3 +15,6 @@ def balance_reaction(reaction): #"Fe2O3 + H2 -> Fe + H2O"
 
     return coefficients # [1/3, 1, 2/3, 1]
 
+
+if __name__ == '__main__':
+    print(balance_reaction("H3O -> H6 O2"))
