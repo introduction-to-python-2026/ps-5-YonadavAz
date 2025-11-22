@@ -17,4 +17,4 @@ def balance_reaction(reaction): #"Fe2O3 + H2 -> Fe + H2O"
 
 
 if __name__ == '__main__':
-    print(balance_reaction("H3O -> H6 O2"))
+    print(balance_reaction("HO -> H6 O2"))

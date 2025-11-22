@@ -1,15 +1,18 @@
 
 
 
-def split_before_uppercases(formula):
-    start = 1
-    text = ""
+def split_before_uppercases(formula: str):
+    start = 0
+    atoms = []
     for i,x in enumerate(formula):
+        if i == 0:
+            continue
         if x.isupper():
-            text += formula[start:i]
+            atoms.append(formula[start:i])
             start = i
-        text += formula[start:i]
-    return text
+    atoms.append(formula[start:len(formula)])
+    return atoms
+
 
 def split_at_digit(formula):
     for i,x in enumerate(formula):
@@ -50,3 +53,6 @@ def count_atoms_in_reaction(molecules_list):
     for molecule in molecules_list:
         molecules_atoms_count.append(count_atoms_in_molecule(molecule))
     return molecules_atoms_count
+
+if __name__ == '__main__':
+    print(split_before_uppercases("HO23C2"))

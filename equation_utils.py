@@ -56,7 +56,7 @@ def my_solve(equations, coefficients):
             coefficient_values.append(float(solution[coefficient]))
         return coefficient_values
 
-    raise ValueError(F"Solution and coefficients do not have the same len: {solution} {coefficients}")
+    raise ValueError(F"Solution and coefficients do not have the same len: solutions: {solution} equations: {equations} coefficients: {coefficients}")
 
 
 
