@@ -17,7 +17,7 @@ def split_before_uppercases(formula: str):
 def split_at_digit(formula):
     for i,x in enumerate(formula):
         if x.isdigit():
-            return formula[:i], formula[i:] 
+            return formula[:i], int(formula[i:])
     return formula, 1
 
             
